@@ -49,7 +49,7 @@ section:nth-child(even){
 
 .btn, #addToCartbtn{
     margin-top: 1rem;
-    display: inlsine-block;
+    display: inline-block;
     font-size: 1.7rem;
     color:#fff;
     background: var(--black);
@@ -60,7 +60,7 @@ section:nth-child(even){
 
 .btn:hover, #addToCartbtn:hover{
     background: var(--green);
-    letter-spacing: .1rem;
+    letter-spacing: .07rem;
 }
 
 header{
@@ -417,7 +417,7 @@ header .icons #menu-bars{
 
 .offers .box-container .box .content h3{
     color:var(--black);
-    font-size: 2.5rem;
+    font-size: 2.2rem;
 }
 
 .offers .box-container .box .content p{
