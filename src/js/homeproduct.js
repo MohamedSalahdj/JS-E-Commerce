@@ -113,7 +113,7 @@ function dispalyHomeProducts() {
                 </div>
                 <h3>${product.name}</h3>
                 <p>${product.description}</p>
-                <a href="#" class="btn">add to cart</a>
+                <button onclick='addToCart()' id="addToCartbtn" data-animal-type='${product}'>add to cart</button>
                 <span class="price">$${product.price}</span>
             </div>
         </div>

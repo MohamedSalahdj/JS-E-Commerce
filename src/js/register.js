@@ -21,7 +21,7 @@ regform.addEventListener('submit', (event) => {
         const admin = new Admin(first_name, last_name, email, password);
         admins.push(admin);
         localStorage.setItem('admins', JSON.stringify(admins));
-        location.replace('admin.html');
+        location.replace('Admin/adminpanel.html');
       }
       break;
     case 'customer':

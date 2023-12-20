@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="static/js/user.js" defer type="module"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1> Welcome admin</h1>
+    <button onclick="logout(event)">Logout</button>
+    <script type="module">
+        import {isLoggedIn} from "./static/js/user.js" 
+        window.onload = (event) => {
+            console.log("page is fully loaded");
+            if(isLoggedIn() == false){
+                window.location="login.html"
+            }
+        };
+    </script>
+    <script>
+        function logout(event){
+            localStorage.removeItem("loggedInUser");
+            window.location = "login.html"
+        }
+    </script>
+
+
+</body>
+</html>

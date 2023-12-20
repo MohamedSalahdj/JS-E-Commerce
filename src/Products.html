@@ -2,14 +2,222 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products</title>
-    <link rel="stylesheet" href="css/adminpanel.css">
-    <link rel="stylesheet" href="css/products.css">
+    <title>HOME</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/home.css">
+
 </head>
 <body>
-    <div class="content" id="productsContainer">
+    
+<!-- header section starts      -->
+
+<header>
+    <!-- class='fas fa-cart-arrow-down' style='font-size:48px;color:red' -->
+
+    <a href="#" class="logo"><i class="fas fa-cart-arrow-down"></i> HYM</a>
+
+    <nav class="navbar">
+        <a class="active" href="home.html">home</a>
+        <a href="#">Products</a>
+        <a href="#about">about</a>
+        <!-- <a href="#review">review</a> -->
+        <a href="order.html">order</a>
+        <a href="menu.html">menu</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <i class="fas fa-search" id="search-icon"></i>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-shopping-cart"></a>
     </div>
-    <script src="js/product.js"></script>
+</header>
+<!-- header section ends-->
+
+
+
+<!-- search form  -->
+
+<form action="" id="search-form">
+    <input type="search" placeholder="search here..." name="" id="search-box">
+    <label for="search-box" class="fas fa-search"></label>
+    <i class="fas fa-times" id="close"></i>
+</form>
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+    <div class="swiper-container home-slider">
+        <div class="swiper-wrapper wrapper">
+            <div class="swiper-slide slide">
+                <div class="content">
+                    <span id="categoryTitle">our slider</span>
+                    <h3>Hello</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eos facere minus, cupiditate suscipit ipsam deserunt eaque architecto dignissimos tenetur magnam voluptas pariatur veritatis dolorum sit, deleniti quas quisquam illum!</p>
+                    <a href="order.html" class="btn">order now</a>
+                </div>
+                <div class="image">
+                    <img src="" alt="">
+                </div>
+            </div>
+        </div>
+    <div class="swiper-pagination"></div>
+
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+
+<!-- offers section starts  -->
+<section class="offers" id="offers">
+
+    <h3 class="sub-heading"> our offers </h3>
+    <h1 class="heading"> today's speciality </h1>
+
+    <div class="box-container" id="procard">
+        <!-- Products of categories will show here -->
+    </div>
+
+</section>
+<!-- offers section ends -->
+
+<!-- about section starts  -->
+<section class="about" id="about">
+
+    <h3 class="sub-heading"> about us </h3>
+    <h1 class="heading"> why choose us? </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="" alt="">
+        </div>
+
+        <div class="content">
+            <h3>best Products in the Country</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius inventore labore, laudantium vel illum aperiam ullam, pariatur delectus porro quis dolor dolorum id recusandae voluptatibus ipsum quibusdam! Praesentium, dolor amet?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius inventore labore, laudantium vel illum aperiam ullam, pariatur delectus porro quis dolor dolorum id recusandae voluptatibus ipsum quibusdam! Praesentium, dolor amet?</p>
+            <div class="icons-container">
+                <div class="icons">
+                    <i class="fas fa-shipping-fast"></i>
+                    <span>free delivery</span>
+                </div>
+                <div class="icons">
+                    <i class="fas fa-dollar-sign"></i>
+                    <span>easy payments</span>
+                </div>
+                <div class="icons">
+                    <i class="fas fa-headset"></i>
+                    <span>24/7 service</span>
+                </div>
+            </div>
+            <a href="#" class="btn">learn more</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+    <h3 class="sub-heading"> Our Team </h3>
+    <h1 class="heading"> what they say </h1>
+    <div class="swiper-container review-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide">
+                <i class="fas fa-quote-right"></i>
+                <div class="user">
+                    <img src="" alt="Yousef Abualam">
+                    <div class="user-info">
+                        <h3>Yousef Abualam</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae aspernatur harum itaque sed laudantium commodi! At beatae nam inventore nostrum ducimus ullam tenetur, quos dolor quia sit, recusandae totam incidunt!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- review section ends -->
+
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>locations</h3>
+            <a href="#">Eygpt</a>
+            <a href="#">Japan</a>
+            <a href="#">Russia</a>
+            <a href="#">USA</a>
+            <a href="#">France</a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#">home</a>
+            <a href="#">dishes</a>
+            <a href="#">about</a>
+            <a href="#">menu</a>
+            <a href="#">reivew</a>
+            <a href="#">order</a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <!-- <a href="#">+201113283302</a> -->
+            <a href="#">yA@gmail.com</a>
+            <a href="#">hh@gmail.com</a>
+            <a href="#">Mohamedsamydj@gmail.com</a>
+            <a href="#">ALEXZANDRIA, EYGPT </a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#">facebook</a>
+            <a href="#">twitter</a>
+            <a href="#">instagram</a>
+            <a href="#">linkedin</a>
+        </div>
+
+    </div>
+
+    <div class="credit"> copyright @ 2023 by <span>HYM</span> </div>
+
+</section>
+
+<!-- footer section ends -->
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!-- custom js file link  -->
+<!-- <script src="js/home.js"></script> -->
+<script src="js/categoryproducts.js"></script>
+
 </body>
 </html>

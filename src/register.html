@@ -11,28 +11,27 @@
         <img src="images/ecommerce.png" alt="">
     </div>
 
-    <div class="flex-registration">
+    <div class="registration">
         <div id="rbox">
             <h1>Create account</h1>
             <form id="rform">
                 <input type="hidden" id="user_id" name="User ID">
-                <div id="req">
-                    <!-- <label for="First name">First name</label> -->
+                <div id="req">                    
                     <input tabindex="1" type="text" id="First_name" name="First-name" required placeholder="First Name">
-                    <!-- <label for="Last Name">Last Name</label> -->
                     <input tabindex="2" type="text" id="last_name" name="Last-Name" required placeholder="Last Name">
-                    <!-- <label for="telephone">telephone</label> -->
                     <input type="tel" tabindex="3" id="phone" name="phone" pattern="^01[0-9]{9}" required placeholder="Phone Number">
-                    <!-- <label for="Email">Email </label> -->
                     <input tabindex="4" type="email" id="Email" name="Email" required pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder="Email">
-                    <!-- <label for="Password ">Password</label> -->
                     <input tabindex="5" type="password" id="Password" name="Password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Password">
-                    <!-- <label for="Repeat  Password ">Repeat Password</label> -->
                     <input tabindex="6" type="password" id="Repeat  Password" name="Repeat  Password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Repeat Password">
                 </div>
                 <input tabindex="7" type="checkbox" value="checkbox">I agreed to terms&condition
                 <button type="submit">Continue</button>
             </form>
+            <hr>
+            <div class="askyou">
+                <p>Already have an account? <a href="login.html">Sign in</a></p>
+            </div>
+
         </div>
     </div>
     <script src="js/register.js" type="module"></script>

@@ -1,10 +1,10 @@
+
 export function userfun(email) {
     const emailformat = /^\w+[\w\._-]+@hmy+\.[a-z]/gm;
     console.log(email);
     if (emailformat.test(email)) {
         return "admin";
-    }
-    else {
+    } else {
         return "customer";
     }
 }
@@ -29,8 +29,9 @@ export class Admin extends User {
 
 export class Customer extends User {
     static count = 0;
-    constructor(first_name, last_name, email, password) {
+    constructor(first_name, last_name, email, phone, password) {
         super(first_name, last_name, email, password);
+        this.phone = phone;
         this.id = self.crypto.randomUUID();
         Customer.count++;
     }
@@ -51,9 +52,34 @@ export class Product {
     }
 }
 
-export class Category {
-    constructor(id, name){
-        this.id = id;
-        this.name = name;
+export class Cart {
+    static count = 0;
+    constructor(user, items = []) {
+        this.id = self.crypto.randomUUID();
+        this.user = user;
+        this.items = items;
+        Order.count++;
+    }
+}
+
+export class WishList {
+    static count = 0;
+    constructor(user, items = []) {
+        this.id = self.crypto.randomUUID();
+        this.user = user;
+        this.items = items;
+        Order.count++;
+    }
+}
+
+export class Order {
+    static count = 0;
+    constructor(user, items = {}, status = "Pending") {
+        this.id = self.crypto.randomUUID();
+        this.date = new Date().toUTCString()
+        this.user = user;
+        this.items = items;
+        this.status = status;
+        Order.count++;
     }
 }

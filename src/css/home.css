@@ -47,9 +47,9 @@ section:nth-child(even){
     text-transform: uppercase;
 }
 
-.btn{
+.btn, #addToCartbtn{
     margin-top: 1rem;
-    display: inline-block;
+    display: inlsine-block;
     font-size: 1.7rem;
     color:#fff;
     background: var(--black);
@@ -58,7 +58,7 @@ section:nth-child(even){
     padding:.8rem 3rem;
 }
 
-.btn:hover{
+.btn:hover, #addToCartbtn:hover{
     background: var(--green);
     letter-spacing: .1rem;
 }
