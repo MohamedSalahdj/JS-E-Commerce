@@ -15,29 +15,31 @@
           <ul>
             <li><a href="adimnproducts.html">Products</a></li>
             <li><a href="admincategories.html">Category</a></li>
-            <li><a href="#">Users</a></li>
+            <li><a href="#">Orders</a></li>
             <li><a href="#">Logout</a></li>
           </ul>
         </div>
         <div class="content">
             <div class="beftable">
-                <h2>Select Product to Delete</h2>
+                <h2>Select Product to Make Action</h2>
                 <!-- <button ><a>ADD CATEGORY</a></button> -->
-                <a href="createproduct.html" target="_self">ADD Product</a>
+                <a href="createproduct.html" target="_self" id="create">ADD Product</a>
             </div>
             <table id="category">
                 <thead>
                     <tr>
                         <th><input type="checkbox" name="" id=""></th>
-                        <th class="cat-80">Category</th>
+                        <th class="cat-80">Products</th>
                     </tr>
                 </thead>
                 <tbody id="ProductTableBody">
                     <!-- Products will be dynamically inserted here -->
                 </tbody>
             </table>
-            <button type="button" id="update">Update</button>
-            <button type="button" id="delete">Delete</button>
+            <div class="btnaction">
+                <button type="button" id="update">Update</button>
+                <button type="button" id="delete">Delete</button>
+            </div>
         </div>
     <script src="../js/productpanel.js"></script>
 </body>
