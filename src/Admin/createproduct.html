@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Product</title>
+    <link rel="stylesheet" href="../css/adminpanel.css">
+    <link rel="stylesheet" href="../css/products.css">
+    <link rel="stylesheet" href="../css/updateproduct.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+          <h2>Admin Panel</h2>
+          <ul>
+            <li><a href="adimnproducts.html">Products</a></li>
+            <li><a href="admincategories.html">Category</a></li>
+            <li><a href="#">Users</a></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </div>
+        <div class="content">
+            <div class="bef-form">
+                <h2>Craete Product</h2>
+                <!-- <button ><a>ADD CATEGORY</a></button> -->
+            </div>
+    <div class="container-form">
+    <div id="rbox">
+        <form id="productform">
+            <input type="hidden" id="product_id" name="product_id">
+            <div id="req">
+                <label for="name">name:</label>
+                <input tabindex="1" type="text" id="name" name="name" required>
+                <label for="category">category:</label>
+                <select id="category" name="category">
+                </select>
+                <label for="price">price:</label>
+                <input tabindex="2" type="number" id="price" name="price" required>
+                <label for="description">description:</label>
+                <textarea  tabindex="13" id="description" name="description" rows="4" cols="40"></textarea>
+                <label for="stockQuantity">stockQuantity:</label>
+                <input tabindex="4" type="number" id="stockQuantity" name="stockQuantity" required>
+                <label for="image">image:</label>
+                <input tabindex="6" type="file" id="image" name="image" required>
+            </div>
+            <button type="submit">Save</button>
+        </form>
+    </div>
+    </div>
+    <script src="../js/createproduct.js" type="module"></script>
+</body>
+</html>

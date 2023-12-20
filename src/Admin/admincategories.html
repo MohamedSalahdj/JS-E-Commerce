@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category</title>
+    <link rel="stylesheet" href="../css/adminpanel.css">
+    <link rel="stylesheet" href="../css/products.css">
+    <link rel="stylesheet" href="../css/category.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+          <h2>Admin Panel</h2>
+          <ul>
+            <li><a href="adimnproducts.html">Products</a></li>
+            <li><a href="admincategories.html">Category</a></li>
+            <li><a href="#">Users</a></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </div>
+        <div class="content">
+            <div class="beftable">
+                <h2>Select Category to Delete</h2>
+                <!-- <button ><a>ADD CATEGORY</a></button> -->
+                <a href="createcategory.html" target="_self">ADD CATEGORY</a>
+            </div>
+            <table id="category">
+                <thead>
+                    <tr>
+                        <th><input type="checkbox" name="" id=""></th>
+                        <th class="cat-80">Category</th>
+                    </tr>
+                </thead>
+                <tbody id="categoryTableBody">
+                    <!-- Categories will be dynamically inserted here -->
+                </tbody>
+            </table>
+        </div>
+    <script src="../js/category.js"></script>
+</body>
+</html>
